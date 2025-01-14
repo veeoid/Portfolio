@@ -11,24 +11,55 @@ function App() {
       setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
     });
   };
+
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL",
-      github: "https://github.com/johndoe/ecommerce",
-      tech: ["React", "Node.js", "PostgreSQL", "Redux"]
+      title: "Portfolio Website",
+      description: "A modern, responsive portfolio website built with React and Tailwind CSS that showcases my professional background.",
+      github: "https://github.com/veeoid/Portfolio",
+      tech: ["React", "TypeScript", "Vite", "Trailwind CSS"]
     },
     {
-      title: "Task Management App",
-      description: "Real-time task management application with team collaboration features",
-      github: "https://github.com/johndoe/task-manager",
+      title: "Valorant AI Chatbot",
+      description: "An AWS Bedrock LLM-powered chat app for interactive Q&A, providing insightful answers from a curated knowledge base.",
+      github: "https://github.com/Nidhzzz/vct_hackathon",
       tech: ["React", "Firebase", "Tailwind CSS", "TypeScript"]
     },
     {
-      title: "AI Image Generator",
-      description: "Web application that generates images using AI models",
-      github: "https://github.com/johndoe/ai-image-gen",
-      tech: ["Python", "React", "TensorFlow", "AWS"]
+      title: "Memoir: Blog Platform",
+      description: "Memoir is a blog platform enabling users to create, share, and discover content with features like user authentication, content management, image optimization, and seamless browsing.",
+      github: "https://github.com/veeoid/memoir",
+      tech: ["React", "Django", "PostgreSQL", "AWS EC2", "AWS RDS", "AWS S3", "AWS Lambda", "Vite"]
+    },
+    {
+      title: "Serverless Function Platform",
+      description: "This project is a serverless function platform designed to execute tasks or functions dynamically within a Kubernetes environment. The platform allows users to deploy, execute, and monitor functions on-demand using Kubernetes Jobs. ",
+      github: "https://github.com/ndcahuang/csci-759-csci-652-final-project",
+      tech: ["Python", "Django", "Kubernetes", "Docker", "Minikube", "Kubernetes Python Client", "SQLite", "HTTP REST APIs"]
+    },
+    {
+      title: "Virtual Assistant with Sign Language using Deep Learning and TensorFlow",
+      description: "This application which enables deaf-mutes to communicate with Virtual Voice Assistants using OpenCV and Tensoreflow. ",
+      github: "https://github.com/veeoid/Sign_Language_Recognition_for_Digitial_Assistants",
+      tech: ["Python", "OpenCV", "Tensorflow", "Pyttsx3", "speech_recognition"]
+    },
+    {
+      title: "Yelp Review Application",
+      description: "This project is a Yelp-like application that provides a user-friendly interface for exploring businesses and their reviews. It's built using Python with tkinter for the GUI and utilizes a Cassandra database to store and retrieve data.",
+      github: "https://github.com/veeoid/Yelp_Review_Application",
+      tech: ["Python", "tkinter", "Cassandra", "CQL (Cassandra Query Language)", "PIL (Python Imaging Library)" ]
+    },
+    {
+      title: "Android based Fitness Application",
+      description: "Android fitness app with features including workout tracking, guided tutorial programs, customizable schedules, and local data storage using SQLite for efficient user data management.",
+      github: "https://github.com/veeoid/Fitness-App",
+      tech: ["Java", "XML", "SQLite", "Android Studio"]
+    },
+    {
+      title: "Instagram Trend Analysis",
+      description: "This project focuses on analyzing a large-scale Instagram dataset to uncover patterns in user behavior, particularly related to location-based posting. It demonstrates advanced data processing and mining techniques using both relational (PostgreSQL) and NoSQL (MongoDB) databases to handle millions of Instagram posts, user profiles, and location data.",
+      github: "https://github.com/veeoid/Instagram_Trend_Analysis",
+      tech: ["PostgreSQL", "MongoDB", "Python", "SQL", "PyMongo", "psycopg2", "NoSQL"]
     }
   ];
 
@@ -52,10 +83,14 @@ function App() {
               Hey there! I’m a Software Development Engineer who loves turning complex problems into elegant, scalable solutions. Whether I’m building full-stack apps with React and Python, diving into the world of cloud computing with AWS, or experimenting with machine learning, I’m always excited to learn something new. I thrive on creating systems that are not just efficient, but also enjoyable to work on. Right now, I’m on the lookout for SDE roles where I can collaborate with awesome teams, tackle interesting challenges, and continue growing as a software engineer. Let’s build something amazing together!
               </p>
               <div className="flex justify-center lg:justify-start space-x-6 mb-8">
-                <a href="https://github.com/veeoid" className="text-blue-200 hover:text-white transition-colors">
+                <a href="https://github.com/veeoid" className="text-blue-200 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer">
                   <Github size={24} />
                 </a>
-                <a href="https://www.linkedin.com/in/vismay-chaudhari/" className="text-blue-200 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/vismay-chaudhari/" className="text-blue-200 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer">
                   <Linkedin size={24} />
                 </a>
                 <button
@@ -65,7 +100,9 @@ function App() {
                 >
                   <Mail size={24} />
                 </button>
-                <a href="/user-components/resume.pdf" className="text-blue-200 hover:text-white transition-colors">
+                <a href="/user-components/resume.pdf" className="text-blue-200 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer">
                   <FileText size={24} />
                 </a>
               </div>
@@ -115,7 +152,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-400">© 2024 John Developer. All rights reserved.</p>
+          <p className="text-gray-400">© 2024 Vismay Chaudhari. All rights reserved.</p>
         </div>
       </footer>
     </div>
