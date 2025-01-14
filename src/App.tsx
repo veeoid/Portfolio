@@ -73,7 +73,7 @@ function App() {
               <img
                 src="/user-components/profile_photo.png"
                 alt="Profile"
-                className="w-64 h-64 rounded-2xl object-cover shadow-2xl"
+                className="w-50 h-50 rounded-2xl object-cover shadow-2xl"
               />
             </div>
             <div className="lg:w-2/3 text-center lg:text-left">
