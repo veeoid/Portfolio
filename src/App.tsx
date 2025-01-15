@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, Code2, Database, Layout, Server, Menu, X } from 'lucide-react';
 
 function App() {
   const [copied, setCopied] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("vismaychaudhari7@gmail.com").then(() => {
@@ -11,6 +12,14 @@ function App() {
       setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
     });
   };
+
+    const scrollToSection = (id: string) => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsMenuOpen(false);
+    };
 
   const projects = [
     {
@@ -65,6 +74,45 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Navigation Header */}
+      <nav className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between h-16">
+            <span className="text-xl font-bold text-indigo-600">VC</span>
+            
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-8">
+              <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-indigo-600">About</button>
+              <button onClick={() => scrollToSection('skills')} className="text-gray-600 hover:text-indigo-600">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-indigo-600">Projects</button>
+              <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X /> : <Menu />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden py-4">
+              <div className="flex flex-col space-y-4">
+                <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-indigo-600">About</button>
+                <button onClick={() => scrollToSection('skills')} className="text-gray-600 hover:text-indigo-600">Skills</button>
+                <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-indigo-600">Projects</button>
+                <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
+                <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
       {/* Hero Section with Photo */}
       <section className="min-h-screen bg-gradient-to-br from-blue-900 to-gray-900 text-white py-20">
         <div className="container mx-auto px-6">
