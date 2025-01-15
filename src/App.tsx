@@ -87,8 +87,8 @@ function App() {
               <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-indigo-600">Projects</button>
               <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
+              <a href="https://github.com/veeoid" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
+              <a href="https://www.linkedin.com/in/vismay-chaudhari/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -106,8 +106,8 @@ function App() {
                 <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-indigo-600">Projects</button>
                 <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
+                <a href="https://github.com/veeoid" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
+                <a href="https://www.linkedin.com/in/vismay-chaudhari/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
               </div>
             </div>
           )}
@@ -116,16 +116,16 @@ function App() {
       {/* Hero Section with Photo */}
       <section className="min-h-screen bg-gradient-to-br from-blue-900 to-gray-900 text-white py-20">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
-            <div className="lg:w-1/3">
+        <div className="flex flex-col items-center text-center space-y-6">
+            <div >
               <img
                 src="/user-components/profile_photo.png"
                 alt="Profile"
-                className="w-50 h-50 rounded-2xl object-cover shadow-2xl"
+                className="w-56 h-56 rounded-full object-cover shadow-2xl"
               />
             </div>
-            <div className="lg:w-2/3 text-center lg:text-left">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4">Vismay Chaudhari</h1>
+            
+              <h1 className="text-5xl font-bold">Vismay Chaudhari</h1>
               <p className="text-xl md:text-2xl text-blue-200 mb-6">Software Engineer</p>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl">
               Hey there! I’m a Software Development Engineer who loves turning complex problems into elegant, scalable solutions. Whether I’m building full-stack apps with React and Python, diving into the world of cloud computing with AWS, or experimenting with machine learning, I’m always excited to learn something new. I thrive on creating systems that are not just efficient, but also enjoyable to work on. Right now, I’m on the lookout for SDE roles where I can collaborate with awesome teams, tackle interesting challenges, and continue growing as a software engineer. Let’s build something amazing together!
@@ -153,7 +153,6 @@ function App() {
                 rel="noopener noreferrer">
                   <FileText size={24} />
                 </a>
-              </div>
             </div>
           </div>
         </div>
