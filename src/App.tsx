@@ -125,8 +125,8 @@ function App() {
                 <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-indigo-600">Projects</button>
                 <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
-                <a href="https://github.com/veeoid" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">GitHub</a>
-                <a href="https://www.linkedin.com/in/vismay-chaudhari/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-indigo-600">LinkedIn</a>
+                <button onClick={() => window.open("https://github.com/veeoid", "_blank", "noopener,noreferrer")} className="text-gray-600 hover:text-indigo-600">GitHub</button>
+                <button onClick={() => window.open("https://www.linkedin.com/in/vismay-chaudhari/","_blank","noopener noreferrer")} className="text-gray-600 hover:text-indigo-600">LinkedIn</button>
               </div>
             </div>
           )}
