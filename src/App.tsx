@@ -71,7 +71,7 @@ function App() {
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="lg:w-1/3">
               <img
-                src="public/user-components/profile_photo.png"
+                src="/user-components/profile_photo.png"
                 alt="Profile"
                 className="w-50 h-50 rounded-2xl object-cover shadow-2xl"
               />
@@ -100,7 +100,7 @@ function App() {
                 >
                   <Mail size={24} />
                 </button>
-                <a href="public/user-components/resume.pdf" className="text-blue-200 hover:text-white transition-colors"
+                <a href="/user-components/resume.pdf" className="text-blue-200 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer">
                   <FileText size={24} />
