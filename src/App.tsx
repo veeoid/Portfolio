@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import { Github, Linkedin, Mail, FileText, Code2, Database, Layout, Server, Menu, X } from 'lucide-react';
 import emailjs from 'emailjs-com';
 
+const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 function App() {
   const [copied, setCopied] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("vismaychaudhari7@gmail.com").then(() => {
@@ -29,10 +34,10 @@ function App() {
     
       emailjs
         .sendForm(
-          "service_yr14ckb", // Replace with your EmailJS Service ID
-          "template_3zqxmdt", // Replace with your EmailJS Template ID
-          e.target,
-          "3KOHHlHN3bV6k2NaY" // Replace with your EmailJS Public Key
+          serviceId, // Service ID
+          templateId, // Template ID
+          e.target, // Form data
+          publicKey// Public Key
         )
         .then(
           (result) => {
