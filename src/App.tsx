@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 function App() {
   const [copied, setCopied] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("vismaychaudhari7@gmail.com").then(() => {
@@ -21,6 +22,33 @@ function App() {
       }
       setIsMenuOpen(false);
     };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+    
+      emailjs
+        .sendForm(
+          "service_yr14ckb", // Replace with your EmailJS Service ID
+          "template_3zqxmdt", // Replace with your EmailJS Template ID
+          e.target,
+          "3KOHHlHN3bV6k2NaY" // Replace with your EmailJS Public Key
+        )
+        .then(
+          (result) => {
+            alert("Message sent successfully!");
+            e.target.reset();
+            setIsSubmitting(false);
+          },
+          (error) => {
+            alert("Failed to send message. Please try again.");
+            console.error(error.text);
+            setIsSubmitting(false);
+          }
+        );
+    };
+  
+  
 
   const projects = [
     {
@@ -107,7 +135,7 @@ function App() {
               <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
               <button onClick={() => window.open("https://github.com/veeoid", "_blank", "noopener,noreferrer")} className="text-gray-600 hover:text-indigo-600">GitHub</button>
-              <button onClick={() => window.open("https://www.linkedin.com/in/vismay-chaudhari/","_blank","noopener noreferrer")} className="text-gray-600 hover:text-indigo-600">LinkedIn</button>
+              <button onClick={() => window.open("https://www.linkedin.com/in/vismay-chaudhari/","_blank","noopener,noreferrer")} className="text-gray-600 hover:text-indigo-600">LinkedIn</button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -126,7 +154,7 @@ function App() {
                 <button onClick={() => scrollToSection('publications')} className="text-gray-600 hover:text-indigo-600">Publications</button>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-indigo-600">Contact</button>
                 <button onClick={() => window.open("https://github.com/veeoid", "_blank", "noopener,noreferrer")} className="text-gray-600 hover:text-indigo-600">GitHub</button>
-                <button onClick={() => window.open("https://www.linkedin.com/in/vismay-chaudhari/","_blank","noopener noreferrer")} className="text-gray-600 hover:text-indigo-600">LinkedIn</button>
+                <button onClick={() => window.open("https://www.linkedin.com/in/vismay-chaudhari/","_blank","noopener,noreferrer")} className="text-gray-600 hover:text-indigo-600">LinkedIn</button>
               </div>
             </div>
           )}
@@ -274,24 +302,28 @@ function App() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Get In Touch</h2>
           <div className="max-w-lg mx-auto">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="from_name" className="block text-sm font-medium text-gray-700 mb-1">
                   Name
                 </label>
                 <input
                   type="text"
-                  id="name"
+                  name="from_name"
+                  id="from_name"
+                  required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="from_email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  name="from_email"
+                  id="from_email"
+                  required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
                 />
               </div>
@@ -300,21 +332,29 @@ function App() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   id="message"
                   rows={4}
+                  required
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors"
+                disabled={isSubmitting}
+                className={`w-full py-2 px-4 rounded-lg transition-colors ${
+                  isSubmitting
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-indigo-600 text-white hover:bg-indigo-700"
+                }`}
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
