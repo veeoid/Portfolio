@@ -275,33 +275,54 @@ function App() {
         </div>
       </section>
       {/* Skills Section */}
-      <section className="py-20 bg-gray-50" id="skills">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Frontend</h3>
-              <p className="text-gray-600">React, TypeScript, Tailwind CSS, Next.js</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <Server className="w-12 h-12 text-indigo-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Backend</h3>
-              <p className="text-gray-600">Node.js, Express, Python, Django</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <Database className="w-12 h-12 text-indigo-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Database</h3>
-              <p className="text-gray-600">PostgreSQL, MongoDB, Redis</p>
-            </div>
-            <div className="p-6 bg-white rounded-lg shadow-md">
-              <Layout className="w-12 h-12 text-indigo-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">DevOps</h3>
-              <p className="text-gray-600">Docker, AWS, CI/CD, Kubernetes</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-20 bg-gray-50" id="skills">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Languages</h3>
+        <p className="text-gray-600">Python, Java, C++, JavaScript, SQL, NoSQL, VBScript</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Database className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Databases</h3>
+        <p className="text-gray-600">PostgreSQL, MySQL, SQLite, Cassandra, Snowflake</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Layout className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Frameworks & Libraries</h3>
+        <p className="text-gray-600">Django, Flask, ReactJS, PyTorch, TypeScript</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Server className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Tools & Platforms</h3>
+        <p className="text-gray-600">AWS, Azure, Kubernetes, Docker, OpenStack, CI/CD</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+        <p className="text-gray-600">React, TypeScript, Tailwind CSS, Next.js</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Layout className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Version Control</h3>
+        <p className="text-gray-600">Git, Azure DevOps, Jira, Kanban</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Server className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">AI/ML</h3>
+        <p className="text-gray-600">PyTorch, TensorFlow, OpenCV, CUDA, PySpark</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Other Tools</h3>
+        <p className="text-gray-600">Visual Studio, IntelliJ, PyCharm, Android Studio</p>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* Contact Section */}
       <section className="py-20 bg-gray-50" id="contact">
         <div className="container mx-auto px-6">
