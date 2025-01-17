@@ -66,7 +66,7 @@ function App() {
       title: "Valorant AI Chatbot",
       description: "An AWS Bedrock LLM-powered chat app for interactive Q&A, providing insightful answers from a curated knowledge base.",
       github: "https://github.com/Nidhzzz/vct_hackathon",
-      tech: ["React", "Firebase", "Tailwind CSS", "TypeScript"]
+      tech: ["AWS Bedrock", "AWS OpenSearch", "AWS S3", "Selenium", "Python", "Streamlit"]
     },
     {
       title: "Memoir: Blog Platform",
