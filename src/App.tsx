@@ -294,17 +294,12 @@ Right now, I am looking for opportunities where I can build, learn, and contribu
       <div className="p-6 bg-white rounded-lg shadow-md">
         <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Languages</h3>
-        <p className="text-gray-600">Python, Java, C++, JavaScript, TypeScript, SQL, NoSQL, VBScript</p>
+        <p className="text-gray-600">Python, Java, C++, JavaScript, TypeScript, SQL, NoSQL</p>
       </div>
       <div className="p-6 bg-white rounded-lg shadow-md">
         <Database className="w-12 h-12 text-indigo-600 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Databases</h3>
         <p className="text-gray-600">PostgreSQL, MySQL, SQLite, Cassandra, Snowflake</p>
-      </div>
-      <div className="p-6 bg-white rounded-lg shadow-md">
-        <Layout className="w-12 h-12 text-indigo-600 mb-4" />
-        <h3 className="text-xl font-semibold mb-2">Frameworks & Libraries</h3>
-        <p className="text-gray-600">Django, Flask, React, PyTorch</p>
       </div>
       <div className="p-6 bg-white rounded-lg shadow-md">
         <Server className="w-12 h-12 text-indigo-600 mb-4" />
@@ -315,6 +310,11 @@ Right now, I am looking for opportunities where I can build, learn, and contribu
         <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Frontend</h3>
         <p className="text-gray-600">React, TypeScript, Tailwind CSS, Next.js</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Layout className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Backend</h3>
+        <p className="text-gray-600">Django, Flask, REST APIs</p>
       </div>
       <div className="p-6 bg-white rounded-lg shadow-md">
         <Layout className="w-12 h-12 text-indigo-600 mb-4" />
