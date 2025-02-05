@@ -77,7 +77,7 @@ function App() {
     {
       title: "Serverless Function Platform",
       description: "This project is a serverless function platform designed to execute tasks or functions dynamically within a Kubernetes environment. The platform allows users to deploy, execute, and monitor functions on-demand using Kubernetes Jobs. ",
-      github: "https://github.com/ndcahuang/csci-759-csci-652-final-project",
+      github: "https://github.com/veeoid/Serverless-Function-Development-Platform.git",
       tech: ["Python", "Django", "Kubernetes", "Docker", "Minikube", "Kubernetes Python Client", "SQLite", "HTTP REST APIs"]
     },
     {
@@ -180,7 +180,13 @@ function App() {
               <h1 className="text-5xl font-bold">Vismay Chaudhari</h1>
               <p className="text-xl md:text-2xl text-blue-200 mb-6">Software Engineer</p>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl">
-              Hey there! I’m a Software Development Engineer who loves turning complex problems into elegant, scalable solutions. Whether I’m building full-stack apps with React and Python, diving into the world of cloud computing with AWS, or experimenting with machine learning, I’m always excited to learn something new. I thrive on creating systems that are not just efficient, but also enjoyable to work on. Right now, I’m on the lookout for SDE roles where I can collaborate with awesome teams, tackle interesting challenges, and continue growing as a software engineer. Let’s build something amazing together!
+              Hey, I’m Vismay!
+
+I’ve always been curious about how things work, whether it was taking apart gadgets as a kid or figuring out why my code wasn’t running in college. That curiosity led me to a career in software development, where I get to build things, solve problems, and constantly learn.
+
+I started my journey in software engineering with a mix of backend development and data engineering, working on automation, pipelines, and optimizing workflows. Over time, I have explored full-stack development, worked with different teams, and tackled challenges that forced me to adapt quickly. I enjoy creating systems that work smoothly and efficiently, whether that is a backend service, a recommendation model, or a simple tool to make life easier.
+
+Right now, I am looking for opportunities where I can build, learn, and contribute, preferably in a team that values problem-solving and collaboration. If you are working on something interesting, I would love to connect and chat!
               </p>
               <div className="flex justify-center lg:justify-start space-x-6 mb-8">
                 <a href="https://github.com/veeoid" className="text-blue-200 hover:text-white transition-colors"
