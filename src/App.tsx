@@ -302,11 +302,6 @@ Right now, I am looking for opportunities where I can build, learn, and contribu
         <p className="text-gray-600">PostgreSQL, MySQL, SQLite, Cassandra, Snowflake</p>
       </div>
       <div className="p-6 bg-white rounded-lg shadow-md">
-        <Server className="w-12 h-12 text-indigo-600 mb-4" />
-        <h3 className="text-xl font-semibold mb-2">Tools & Platforms</h3>
-        <p className="text-gray-600">AWS, Azure, Kubernetes, Docker, OpenStack, CI/CD</p>
-      </div>
-      <div className="p-6 bg-white rounded-lg shadow-md">
         <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Frontend</h3>
         <p className="text-gray-600">React, TypeScript, Tailwind CSS, Next.js</p>
@@ -315,6 +310,11 @@ Right now, I am looking for opportunities where I can build, learn, and contribu
         <Layout className="w-12 h-12 text-indigo-600 mb-4" />
         <h3 className="text-xl font-semibold mb-2">Backend</h3>
         <p className="text-gray-600">Django, Flask, REST APIs</p>
+      </div>
+      <div className="p-6 bg-white rounded-lg shadow-md">
+        <Server className="w-12 h-12 text-indigo-600 mb-4" />
+        <h3 className="text-xl font-semibold mb-2">Tools & Platforms</h3>
+        <p className="text-gray-600">AWS, Azure, Kubernetes, Docker, OpenStack, CI/CD</p>
       </div>
       <div className="p-6 bg-white rounded-lg shadow-md">
         <Layout className="w-12 h-12 text-indigo-600 mb-4" />
