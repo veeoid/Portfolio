@@ -72,7 +72,7 @@ function App() {
       title: "Memoir: Blog Platform",
       description: "Memoir is a blog platform enabling users to create, share, and discover content with features like user authentication, content management, image optimization, and seamless browsing.",
       github: "https://github.com/veeoid/memoir",
-      tech: ["React", "Django", "PostgreSQL", "AWS EC2", "AWS RDS", "AWS S3", "AWS Lambda", "Vite"]
+      tech: ["React", "Django", "Typescript", "PostgreSQL", "AWS EC2", "AWS RDS", "AWS S3", "AWS Lambda", "Vite"]
     },
     {
       title: "Serverless Function Platform",
@@ -97,6 +97,12 @@ function App() {
       description: "Android fitness app with features including workout tracking, guided tutorial programs, customizable schedules, and local data storage using SQLite for efficient user data management.",
       github: "https://github.com/veeoid/Fitness-App",
       tech: ["Java", "XML", "SQLite", "Android Studio"]
+    },
+    {
+      title: "BookHub - A Django-React Book Management System",
+      description: "BookHub is a Book Management System that allows users to add, view, update, and delete books efficiently using a Django backend and React frontend. It provides a seamless way to manage a digital book collection with a modern UI, making book tracking and organization effortless.",
+      github: "https://github.com/veeoid/Django-React-CRUD.git",
+      tech: ["React.js", "JavaScript", "Django", "Python", "Django REST Framework", "SQLite"]
     },
     {
       title: "Instagram Trend Analysis",
