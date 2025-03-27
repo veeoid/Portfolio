@@ -65,7 +65,7 @@ function App() {
 
   const projects = [
     {
-      title: "CodeCue – AI-Powered LeetCode Assistant",
+      title: "CodeCue: AI-Powered LeetCode Assistant",
       description:
         "A Chrome extension designed to enhance LeetCode problem-solving with instant AI-driven support. Automatically identifies and extracts the current LeetCode problem, providing progressive hints (basic to advanced), structured pseudocode explanations, and Python code solutions through an intuitive interface. Uses a secure Node.js backend proxy integrated with Groq's LLaMA-3 model for efficient, real-time responses, significantly boosting coding productivity and comprehension.",
       github: "https://github.com/veeoid/Code-Cue",
@@ -83,7 +83,7 @@ function App() {
     },
 
     {
-      title: "CloudMart E-Commerce with AI Integration",
+      title: "CloudMart eCommerce with AI Integration",
       description:
         "A modern e-commerce platform that integrates AI services such as product recommendations, customer support, and sentiment analysis. It uses AWS, Google Cloud, and Azure services to deliver a seamless shopping experience.",
       github: "https://github.com/veeoid/cloudmart",
@@ -102,7 +102,7 @@ function App() {
       ],
     },
     {
-      "title": "TechTonic –  Business Management System",
+      "title": "TechTonic:  Business Management System",
       "description": "TechTonic is a full-stack business management solution designed to streamline operations for organizations. It offers efficient customer management, real-time inventory tracking, and insightful business analytics through a modern, intuitive interface. Built with Angular 19 and .NET Core Web API, TechTonic ensures seamless integration and robust performance.",
       "github": "https://github.com/veeoid/TechTonic",
       "tech": [
@@ -471,35 +471,37 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <a
-                key={index}
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-semibold group-hover:text-blue-600 transition-colors">
-                      {project.title}
-                    </h3>
-                    <Github
-                      className="text-gray-600 group-hover:text-blue-600 transition-colors"
-                      size={20}
-                    />
-                  </div>
-                  <p className="text-gray-600 mb-6">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <div className="p-8">
+              <div className="flex items-start justify-between mb-4">
+  <h3 className="flex-1 pr-2 text-xl font-semibold group-hover:text-blue-600 transition-colors">
+    {project.title}
+  </h3>
+  <Github
+    className="text-gray-600 group-hover:text-blue-600 transition-colors"
+    size={20}
+  />
+</div>
+
+
+                <p className="text-gray-600 mb-6">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-              </a>
+              </div>
+            </a>
+            
             ))}
           </div>
         </div>
