@@ -201,7 +201,7 @@ function App() {
       tech: ["React", "TypeScript", "Vite", "Trailwind CSS"],
     },
     {
-      title: "BookHub - A Django-React Book Management System",
+      title: "BookHub - Book Management System",
       description:
         "BookHub is a Book Management System that allows users to add, view, update, and delete books efficiently using a Django backend and React frontend. It provides a seamless way to manage a digital book collection with a modern UI, making book tracking and organization effortless.",
       github: "https://github.com/veeoid/Django-React-CRUD.git",
