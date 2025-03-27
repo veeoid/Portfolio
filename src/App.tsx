@@ -102,6 +102,21 @@ function App() {
       ],
     },
     {
+      "title": "TechTonic – Comprehensive Business Management System",
+      "description": "TechTonic is a full-stack business management solution designed to streamline operations for organizations. It offers efficient customer management, real-time inventory tracking, and insightful business analytics through a modern, intuitive interface. Built with Angular 19 and .NET Core Web API, TechTonic ensures seamless integration and robust performance.",
+      "github": "https://github.com/veeoid/TechTonic",
+      "tech": [
+        "Angular 19",
+        ".NET Core Web API",
+        "SQL Server",
+        "Entity Framework Core",
+        "TypeScript",
+        "C#",
+        "HTML",
+        "CSS"
+      ],
+    },
+    {
       title: "Valorant AI Chatbot",
       description:
         "An AWS Bedrock LLM-powered chat app for interactive Q&A, providing insightful answers from a curated knowledge base.",
