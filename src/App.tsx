@@ -38,7 +38,7 @@ function App() {
     setIsMenuOpen(false);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -65,12 +65,23 @@ function App() {
 
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "CodeCue – AI-Powered LeetCode Assistant",
       description:
-        "A modern, responsive portfolio website built with React and Tailwind CSS that showcases my professional background.",
-      github: "https://github.com/veeoid/Portfolio",
-      tech: ["React", "TypeScript", "Vite", "Trailwind CSS"],
+        "A Chrome extension designed to enhance LeetCode problem-solving with instant AI-driven support. Automatically identifies and extracts the current LeetCode problem, providing progressive hints (basic to advanced), structured pseudocode explanations, and Python code solutions through an intuitive interface. Uses a secure Node.js backend proxy integrated with Groq's LLaMA-3 model for efficient, real-time responses, significantly boosting coding productivity and comprehension.",
+      github: "https://github.com/veeoid/Code-Cue",
+      tech: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Node.js",
+        "Express",
+        "Groq API",
+        "LLaMA-3",
+        "Chrome Extension",
+        "Vercel",
+      ],
     },
+
     {
       title: "CloudMart E-Commerce with AI Integration",
       description:
@@ -166,6 +177,13 @@ function App() {
         "Android fitness app with features including workout tracking, guided tutorial programs, customizable schedules, and local data storage using SQLite for efficient user data management.",
       github: "https://github.com/veeoid/Fitness-App",
       tech: ["Java", "XML", "SQLite", "Android Studio"],
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A modern, responsive portfolio website built with React and Tailwind CSS that showcases my professional background. Simple Website using React, Vite and TypeScript and hosted over Vercel.",
+      github: "https://github.com/veeoid/Portfolio",
+      tech: ["React", "TypeScript", "Vite", "Trailwind CSS"],
     },
     {
       title: "BookHub - A Django-React Book Management System",
@@ -507,14 +525,14 @@ function App() {
               <Code2 className="w-12 h-12 text-indigo-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Languages</h3>
               <p className="text-gray-600">
-                Python, Java, C++, JavaScript, TypeScript, SQL, NoSQL
+                Python, JavaScript, C#, TypeScript, SQL, NoSQL, Java
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
               <Database className="w-12 h-12 text-indigo-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Databases</h3>
               <p className="text-gray-600">
-                PostgreSQL, MySQL, SQLite, Cassandra, Snowflake
+                PostgreSQL, MySQL, SQLite, Cassandra, Snowflake, MongoDB
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
@@ -527,13 +545,14 @@ function App() {
             <div className="p-6 bg-white rounded-lg shadow-md">
               <Layout className="w-12 h-12 text-indigo-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Backend</h3>
-              <p className="text-gray-600">Django, Flask, REST APIs</p>
+              <p className="text-gray-600">Django, Flask, .NET, REST APIs</p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
               <Server className="w-12 h-12 text-indigo-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Tools & Platforms</h3>
               <p className="text-gray-600">
-                AWS, Azure, Kubernetes, Docker, OpenStack, CI/CD
+                AWS, Azure (Blob, Text Analytics, Fabric), Kubernetes, Docker,
+                CI/CD, GCP Big Query
               </p>
             </div>
             <div className="p-6 bg-white rounded-lg shadow-md">
