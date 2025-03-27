@@ -168,7 +168,7 @@ function App() {
       title:
         "Virtual Assistant with Sign Language using Deep Learning and TensorFlow",
       description:
-        "This application which enables deaf-mutes to communicate with Virtual Voice Assistants using OpenCV and Tensoreflow. ",
+        "This application which enables deaf-mutes to communicate with Virtual Voice Assistants using OpenCV and Tensorflow. ",
       github:
         "https://github.com/veeoid/Sign_Language_Recognition_for_Digitial_Assistants",
       tech: ["Python", "OpenCV", "Tensorflow", "Pyttsx3", "speech_recognition"],
